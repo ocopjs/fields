@@ -68,11 +68,14 @@ dependencies:
   '@emotion/core':
     specifier: ^10.1.1
     version: 10.3.1(react@17.0.2)
+  '@ocopjs/access-control':
+    specifier: ^1.0.3
+    version: 1.0.3
   '@ocopjs/adapter-mongoose':
-    specifier: 1.0.0
+    specifier: ^1.0.0
     version: 1.0.0
   '@ocopjs/server-side-graphql-client':
-    specifier: 1.0.0
+    specifier: ^1.0.0
     version: 1.0.0
   '@ocopjs/utils':
     specifier: ^1.0.5
@@ -1651,6 +1654,13 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
     dev: true
+
+  /@ocopjs/access-control@1.0.3:
+    resolution: {integrity: sha512-hcYVT9YWtvggREoxJdoO2nl0nut+UNiXavgQW0MXy//8fKfQCStY8CPNda0uizOAqvEC9zXixVTjWab31htlGg==}
+    engines: {node: '16'}
+    dependencies:
+      '@ocopjs/utils': 1.0.5
+    dev: false
 
   /@ocopjs/adapter-mongoose@1.0.0:
     resolution: {integrity: sha512-abfypWUpQA//NaMRB+GabIeULwYD28jlzhAjsOFHBo6odZDBY4+gAiadaMM0eN0wqyI1yfl6rxNKpzvHeecOWA==}

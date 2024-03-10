@@ -16,8 +16,6 @@
     "url": "https://github.com/ocopjs/fields/issues"
   },
   "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
   "engines": {
     "node": "16"
   },

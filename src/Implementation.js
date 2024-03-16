@@ -235,7 +235,7 @@ class Field {
   getBackingTypes() {
     // Return the typescript types of the backing item for this field type.
     // This method can be helpful if you want to auto-generate typescript types.
-    // Future releases of Buon will provide full typescript support
+    // Future releases of Ocop will provide full typescript support
     return { [this.path]: { optional: true, type: "any" } };
   }
 }

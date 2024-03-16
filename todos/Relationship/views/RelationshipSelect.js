@@ -125,9 +125,9 @@ const Relationship = forwardRef(
               menuPosition="fixed"
             >
               {children}
-              <div css={{ textAlign: "center" }} ref={loadingRef}>
+              <div style={{ textAlign: "center" }} ref={loadingRef}>
                 {props.options.length < count && (
-                  <span css={{ padding: 8 }}>Loading...</span>
+                  <span style={{ padding: 8 }}>Loading...</span>
                 )}
               </div>
             </components.MenuList>

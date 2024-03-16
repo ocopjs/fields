@@ -50,7 +50,7 @@ function SetAsCurrentUser({ listKey, value, onAddUser, many, isDisabled }) {
       <Tooltip placement="top" content={label}>
         {(ref) => (
           <IconButton
-            css={{ marginLeft: gridSize }}
+            style={{ marginLeft: gridSize }}
             variant="ghost"
             ref={ref}
             onClick={() => {
@@ -105,7 +105,7 @@ function LinkToRelatedItems({ field, value }) {
           icon={LinkExternalIcon}
           aria-label={label}
           variant="ghost"
-          css={{ marginLeft: gridSize }}
+          style={{ marginLeft: gridSize }}
           target="_blank"
           to={link}
           isDisabled={isDisabled}
@@ -155,7 +155,7 @@ function CreateAndAddItem({ field, item, onCreate, isDisabled }) {
               icon={PlusIcon}
               aria-label={label}
               variant="ghost"
-              css={{ marginLeft: gridSize }}
+              style={{ marginLeft: gridSize }}
               isDisabled={isDisabled}
             />
           );
@@ -202,7 +202,7 @@ const RelationshipField = ({
       <FieldLabel htmlFor={htmlID} field={field} errors={errors} />
       <FieldDescription text={field.adminDoc} />
       <FieldInput>
-        <div css={{ flex: 1 }}>
+        <div style={{ flex: 1 }}>
           <RelationshipSelect
             autoFocus={autoFocus}
             isMulti={many}

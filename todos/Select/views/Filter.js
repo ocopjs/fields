@@ -17,7 +17,7 @@ const EventCatcher = (props) => (
   />
 );
 const SelectWrapper = (props) => (
-  <div css={{ marginTop: gridSize * 2 }} {...props} />
+  <div style={{ marginTop: gridSize * 2 }} {...props} />
 );
 
 const SelectFilterView = ({ innerRef, field, value, onChange }) => {
@@ -79,7 +79,7 @@ const CheckMarkOption = ({ children, ...props }) => (
 const CheckMarkOptionSelect = (props) => (
   <CheckMarkOption
     {...props}
-    css={{ paddingLeft: `${gridSize}px`, paddingRight: `${gridSize}px` }}
+    style={{ paddingLeft: `${gridSize}px`, paddingRight: `${gridSize}px` }}
   />
 );
 

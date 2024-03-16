@@ -11,9 +11,9 @@ A whole number.
 ## Usage
 
 ```js
-const { Integer, Text } = require("@buon/fields");
+const { Integer, Text } = require("@ocop/fields");
 
-buon.createList("Review", {
+ocop.createList("Review", {
   fields: {
     comments: { type: Text },
     rating: { type: Integer },

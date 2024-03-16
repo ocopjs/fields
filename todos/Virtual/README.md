@@ -22,9 +22,9 @@ The most basic usage is to provide a `resolver` function which returns a
 ### Basic
 
 ```js
-const { Virtual, Text } = require('@buon/fields');
+const { Virtual, Text } = require('@ocop/fields');
 
-buon.createList('Example', {
+ocop.createList('Example', {
   fields: {
     firstName: { type: Text },
     lastName: { type: Text },
@@ -44,7 +44,7 @@ If the return type is not `String` then you need to define `graphQLReturnType`.
 ```js
 const { Virtual } = require("@ocopjs/fields");
 
-buon.createList("Example", {
+ocop.createList("Example", {
   fields: {
     fortyTwo: {
       type: Virtual,
@@ -64,7 +64,7 @@ data from the file system or an external API:
 ```js
 const { Virtual } = require("@ocopjs/fields");
 
-buon.createList("Example", {
+ocop.createList("Example", {
   fields: {
     movies: {
       type: Virtual,
@@ -94,7 +94,7 @@ arguments are made available in the second argument to the resolver function.
 const { Virtual, CalendarDay } = require("@ocopjs/fields");
 const { format, parseISO } = require("date-fns");
 
-buon.createList("Example", {
+ocop.createList("Example", {
   fields: {
     date: { type: CalendarDay },
     formattedDate: {
@@ -116,10 +116,10 @@ you need to access data beyond what lives on the `item` you can execute a
 `context.executeGraphQL()`.
 
 ```js
-const { Virtual, CalendarDay } = require('@buon/fields');
+const { Virtual, CalendarDay } = require('@ocop/fields');
 const { format, parseISO } = require('date-fns');
 
-buon.createList('Example', {
+ocop.createList('Example', {
   fields: {
     virtual: {
       type: Virtual,

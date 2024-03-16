@@ -11,14 +11,14 @@ Support files hosted in a range of different contexts, e.g. in the local filesys
 ## Usage
 
 ```js
-const { File } = require("@buon/fields");
-const { LocalFileAdapter } = require("@buon/file-adapters");
+const { File } = require("@ocop/fields");
+const { LocalFileAdapter } = require("@ocop/file-adapters");
 
 const fileAdapter = new LocalFileAdapter({
   /*...config */
 });
 
-buon.createList("Applicant", {
+ocop.createList("Applicant", {
   fields: {
     file: {
       type: File,

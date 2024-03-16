@@ -11,9 +11,9 @@ Stores a point in time and a time zone offset.
 ## Usage
 
 ```js
-const { DateTime } = require("@buon/fields");
+const { DateTime } = require("@ocop/fields");
 
-buon.createList("User", {
+ocop.createList("User", {
   fields: {
     lastOnline: {
       type: DateTime,
@@ -83,7 +83,7 @@ On the Mongoose adapter the `DateTime` value is stored across three fields:
 | `${path}_utc`    | `Date`      | The timestamp as a native JS-style epoch           |
 | `${path}_offset` | `String`    | The offset component as string                     |
 
-The `isRequired` config option is enforces by BuonJS only.
+The `isRequired` config option is enforces by OcopJS only.
 
 ### Knex adapter
 
@@ -94,4 +94,4 @@ On the Knex adapter the `DateTime` value is stored across two fields:
 | `${path}_utc`    | `timestamp` | The timestamp in UTC           |
 | `${path}_offset` | `text`      | The offset component as string |
 
-The `isRequired` config option is enforced by BuonJS. If the value is equal to `true`, the column is set as not nullable.
+The `isRequired` config option is enforced by OcopJS. If the value is equal to `true`, the column is set as not nullable.

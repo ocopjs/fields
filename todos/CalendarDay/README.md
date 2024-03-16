@@ -12,9 +12,9 @@ Useful for Birthdays and other all-day events always celebrated in the local tim
 ## Usage
 
 ```js
-const { Text, Password, CalendarDay } = require("@buon/fields");
+const { Text, Password, CalendarDay } = require("@ocop/fields");
 
-buon.createList("User", {
+ocop.createList("User", {
   fields: {
     email: { type: Text },
     password: { type: Password },
@@ -71,10 +71,10 @@ All filter fields expect values in the ISO8601 (`YYYY-MM-DD`) format.
 
 In Mongoose the field is added using the `String` schema type.
 
-The `isRequired` config option is enforced by BuonJS only.
+The `isRequired` config option is enforced by OcopJS only.
 
 ### Knex adapter
 
 The Knex adapter uses the [Knex `date` type](https://knexjs.org/#Schema-date):
 
-The `isRequired` config option is enforced by BuonJS and, if equal to `true`, the column is set as not nullable.
+The `isRequired` config option is enforced by OcopJS and, if equal to `true`, the column is set as not nullable.

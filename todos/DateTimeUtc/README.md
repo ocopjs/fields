@@ -16,9 +16,9 @@ Unlike the `DateTime` field type only the UTC value is stored.
 ## Usage
 
 ```js
-const { DateTimeUtc } = require("@buon/fields");
+const { DateTimeUtc } = require("@ocop/fields");
 
-buon.createList("User", {
+ocop.createList("User", {
   fields: {
     lastOnline: { type: DateTimeUtc },
   },

@@ -23,12 +23,12 @@ As we have specified a `title` field, its value will be used to generate a
 unique slug.
 
 ```javascript
-const { Slug, Text } = require("@buon/fields");
-const { Buon } = require("@buon/buon");
+const { Slug, Text } = require("@ocop/fields");
+const { Ocop } = require("@ocop/ocop");
 
-const buon = new Buon(/* ... */);
+const ocop = new Ocop(/* ... */);
 
-buon.createList("Post", {
+ocop.createList("Post", {
   fields: {
     title: { type: Text },
     url: { type: Slug },
@@ -41,12 +41,12 @@ buon.createList("Post", {
 The item's `username` value will be used to generate a unique slug.
 
 ```javascript
-const { Slug, Text } = require("@buon/fields");
-const { Buon } = require("@buon/buon");
+const { Slug, Text } = require("@ocop/fields");
+const { Ocop } = require("@ocop/ocop");
 
-const buon = new Buon(/* ... */);
+const ocop = new Ocop(/* ... */);
 
-buon.createList("User", {
+ocop.createList("User", {
   fields: {
     username: { type: Text },
     url: {
@@ -60,13 +60,13 @@ buon.createList("User", {
 ### Custom `generate` method
 
 ```javascript
-const { Slug, Text, DateTime } = require("@buon/fields");
-const { Buon } = require("@buon/buon");
+const { Slug, Text, DateTime } = require("@ocop/fields");
+const { Ocop } = require("@ocop/ocop");
 const slugify = require("slugify");
 
-const buon = new Buon(/* ... */);
+const ocop = new Ocop(/* ... */);
 
-buon.createList("Post", {
+ocop.createList("Post", {
   fields: {
     title: { type: Text },
     postedAt: { type: DateTime },
@@ -129,7 +129,7 @@ For example:
 Given the following list config:
 
 ```javascript
-buon.createList("Post", {
+ocop.createList("Post", {
   fields: {
     title: { type: Text },
     url: {
@@ -144,7 +144,7 @@ A mutation to create a new item will auto-generate a slug:
 
 ```graphql
 mutation {
-  createPost(data: { title: "Why I ♥ BuonJS" }) {
+  createPost(data: { title: "Why I ♥ OcopJS" }) {
     id
     title
     url
@@ -155,8 +155,8 @@ mutation {
 # {
 #   createPost: {
 #     id: "1",
-#     title: "Why I ♥ BuonJS",
-#     url: "why-i-love-buon"
+#     title: "Why I ♥ OcopJS",
+#     url: "why-i-love-ocop"
 #   }
 # }
 ```
@@ -166,7 +166,7 @@ subsequently created item with the same `title` will generate a unique slug:
 
 ```graphql
 mutation {
-  createPost(data: { title: "Why I ♥ BuonJS" }) {
+  createPost(data: { title: "Why I ♥ OcopJS" }) {
     id
     title
     url
@@ -177,8 +177,8 @@ mutation {
 # {
 #   createPost: {
 #     id: "2",
-#     title: "Why I ♥ BuonJS",
-#     url: "why-i-love-buon-2108fh3"
+#     title: "Why I ♥ OcopJS",
+#     url: "why-i-love-ocop-2108fh3"
 #   }
 # }
 ```
@@ -187,7 +187,7 @@ You can also manually override the slug's value:
 
 ```graphql
 mutation {
-  createPost(data: { title: "Why I ♥ BuonJS", url: "buon-is-great" }) {
+  createPost(data: { title: "Why I ♥ OcopJS", url: "ocop-is-great" }) {
     id
     title
     url
@@ -198,8 +198,8 @@ mutation {
 # {
 #   createPost: {
 #     id: "2",
-#     title: "Why I ♥ BuonJS",
-#     url: "buon-is-great"
+#     title: "Why I ♥ OcopJS",
+#     url: "ocop-is-great"
 #   }
 # }
 ```
@@ -209,7 +209,7 @@ And overwritten slugs will be uniquified for you when `isUnique: true` (with
 
 ```graphql
 mutation {
-  createPost(data: { title: "Why I ♥ BuonJS", url: "buon-is-great" }) {
+  createPost(data: { title: "Why I ♥ OcopJS", url: "ocop-is-great" }) {
     id
     title
     url
@@ -220,8 +220,8 @@ mutation {
 # {
 #   createPost: {
 #     id: "2",
-#     title: "Why I ♥ BuonJS",
-#     url: "buon-is-great-f80p5sm"
+#     title: "Why I ♥ OcopJS",
+#     url: "ocop-is-great-f80p5sm"
 #   }
 # }
 ```

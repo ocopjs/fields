@@ -12,9 +12,9 @@ Presented as a dropdown in the Admin UI.
 ## Usage
 
 ```js
-const { Select } = require("@buon/fields");
+const { Select } = require("@ocop/fields");
 
-buon.createList("Orders", {
+ocop.createList("Orders", {
   fields: {
     status: { type: Select, options: "pending, processed" },
   },
@@ -45,7 +45,7 @@ const options = [
   { value: "MAYBE", label: "Not sure yet" },
 ];
 
-buon.createList("Rsvp", {
+ocop.createList("Rsvp", {
   fields: {
     attending: { type: Select, options },
     // ..
@@ -75,7 +75,7 @@ const options = [
   { value: "100s", label: "Hundreds" },
 ];
 
-buon.createList("Things", {
+ocop.createList("Things", {
   fields: {
     scale: { type: Select, options },
   },
@@ -85,7 +85,7 @@ buon.createList("Things", {
 Specifying the `string` dataType will work:
 
 ```js
-buon.createList("Things", {
+ocop.createList("Things", {
   fields: {
     scale: { type: Select, options, dataType: "string" },
   },
@@ -95,7 +95,7 @@ buon.createList("Things", {
 If you use the `integer` dataType, options must be provided as integers, so you can't use the shorthand syntax for defining options.
 
 ```js
-buon.createList("Things", {
+ocop.createList("Things", {
   fields: {
     number: { type: Select, options: "1, 2, 3", dataType: "integer" },
   },
@@ -111,7 +111,7 @@ const options = [
   { value: 3, label: "Three" },
 ];
 
-buon.createList("Things", {
+ocop.createList("Things", {
   fields: {
     number: { type: Select, options: options, dataType: "integer" },
   },

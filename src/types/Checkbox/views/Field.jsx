@@ -29,7 +29,7 @@ const CheckboxField = ({
   return (
     <FieldContainer>
       <FieldDescription text={field.adminDoc} />
-      <FieldInput css={{ height: 35, alignItems: "center" }}>
+      <FieldInput style={{ height: 35, alignItems: "center" }}>
         <CheckboxPrimitive
           autoFocus={autoFocus}
           checked={checked}
@@ -41,7 +41,7 @@ const CheckboxField = ({
           htmlFor={htmlID}
           field={field}
           errors={errors}
-          css={{ padding: "4px", fontSize: "1rem", width: "100%" }}
+          style={{ padding: "4px", fontSize: "1rem", width: "100%" }}
         />
       </FieldInput>
     </FieldContainer>

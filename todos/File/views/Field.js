@@ -324,9 +324,9 @@ export default class FileField extends Component {
 // ==============================
 
 const Wrapper = (props) => (
-  <div css={{ alignItems: "flex-start", display: "flex" }} {...props} />
+  <div style={{ alignItems: "flex-start", display: "flex" }} {...props} />
 );
-const Content = (props) => <div css={{ flex: 1, minWidth: 0 }} {...props} />;
+const Content = (props) => <div style={{ flex: 1, minWidth: 0 }} {...props} />;
 const MetaInfo = (props) => <Lozenge crop="right" {...props} />;
 const ErrorInfo = ({ children, ...props }) => (
   <Lozenge
@@ -338,7 +338,7 @@ const ErrorInfo = ({ children, ...props }) => (
     }}
     {...props}
   >
-    <AlertIcon css={{ marginRight: gridSize }} />
+    <AlertIcon style={{ marginRight: gridSize }} />
     {children}
   </Lozenge>
 );
@@ -357,7 +357,7 @@ const Image = ({ src: imgSrc, alt }) => {
   console.log({ src, imgSrc, alt });
   return (
     <img
-      css={{ display: "block", height: "auto", maxWidth: "100%" }}
+      style={{ display: "block", height: "auto", maxWidth: "100%" }}
       src={src}
       alt={alt}
     />
@@ -367,7 +367,7 @@ const Image = ({ src: imgSrc, alt }) => {
 const ImageContainer = (props) => {
   return (
     <div
-      css={{
+      style={{
         backgroundColor: "white",
         borderRadius,
         border: `1px solid ${colors.N20}`,
@@ -400,11 +400,11 @@ class ImageErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div css={{ padding: "4px 0", color: colors.N40 }}>
+        <div style={{ padding: "4px 0", color: colors.N40 }}>
           <div>
             <FileMediaIcon />
           </div>
-          <span css={{ fontSize: "0.9em" }}>Could not load image</span>
+          <span style={{ fontSize: "0.9em" }}>Could not load image</span>
         </div>
       );
     }

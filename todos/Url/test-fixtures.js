@@ -3,7 +3,7 @@ import Url from "./";
 
 export const name = "Url";
 export const type = Url;
-export const exampleValue = () => "https://buon.vn";
+export const exampleValue = () => "https://ocop.vn";
 export const exampleValue2 = () => "https://thinkmill.com.au";
 export const supportsUnique = true;
 export const fieldName = "testField";

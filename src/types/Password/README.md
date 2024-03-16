@@ -20,9 +20,9 @@ to be verified without knowledge of the original value.
 ## Usage
 
 ```js
-const { Password, Text } = require("@buon/fields");
+const { Password, Text } = require("@ocop/fields");
 
-buon.createList("User", {
+ocop.createList("User", {
   fields: {
     email: { type: Text },
     password: { type: Password },
@@ -84,7 +84,7 @@ A work factor of 12 will cause passwords to take _four times_ as long as 10. Etc
 By default the [`bcryptjs`](https://www.npmjs.com/package/bcryptjs) package is used for computing and comparing hashes.
 This package provides a javascript implementation of the `bcrypt` algorithm.
 A compiled version of this algorithm is provided by the [`bcrypt`](https://www.npmjs.com/package/bcrypt) package.
-Setting `{ bcrypt: require('bcrypt') }` will make Buon use the compiled package.
+Setting `{ bcrypt: require('bcrypt') }` will make Ocop use the compiled package.
 If you use this, you must include `bcrypt` in your package dependencies.
 
 The compiled package provides a ~20% performance improvement, and avoids the thread blocking of the JavaScript implementation.

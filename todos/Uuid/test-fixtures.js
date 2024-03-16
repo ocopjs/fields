@@ -43,11 +43,11 @@ export const supportedFilters = () => [
   "in_value",
 ];
 
-export const filterTests = (withBuon) => {
-  const match = async (buon, where, expected) =>
+export const filterTests = (withOcop) => {
+  const match = async (ocop, where, expected) =>
     expect(
       await getItems({
-        buon,
+        ocop,
         listKey: "Test",
         where,
         returnFields: "name otherId",
@@ -57,8 +57,8 @@ export const filterTests = (withBuon) => {
 
   test(
     `Filter: {key} (implicit case-insensitivity)`,
-    withBuon(({ buon }) =>
-      match(buon, { otherId: "C0D37CBC-2F01-432C-89E0-405D54FD4CDC" }, [
+    withOcop(({ ocop }) =>
+      match(ocop, { otherId: "C0D37CBC-2F01-432C-89E0-405D54FD4CDC" }, [
         { name: "a", otherId: "c0d37cbc-2f01-432c-89e0-405d54fd4cdc" },
       ]),
     ),
@@ -66,8 +66,8 @@ export const filterTests = (withBuon) => {
 
   test(
     `Filter: {key}_not (implicit case-insensitivity)`,
-    withBuon(({ buon }) =>
-      match(buon, { otherId_not: "8452DE22-4DFD-4E2A-A6AC-C20CEEF0ADE4" }, [
+    withOcop(({ ocop }) =>
+      match(ocop, { otherId_not: "8452DE22-4DFD-4E2A-A6AC-C20CEEF0ADE4" }, [
         { name: "a", otherId: "c0d37cbc-2f01-432c-89e0-405d54fd4cdc" },
         { name: "b", otherId: "01d20b3c-c0fe-4198-beb6-1a013c041805" },
         { name: "d", otherId: "01d20b3c-c0fe-4198-beb6-1a013c041806" },
@@ -79,9 +79,9 @@ export const filterTests = (withBuon) => {
 
   test(
     `Filter: {key}_in (implicit case-insensitivity)`,
-    withBuon(({ buon }) =>
+    withOcop(({ ocop }) =>
       match(
-        buon,
+        ocop,
         {
           otherId_in: [
             "01D20B3C-C0FE-4198-BEB6-1A013C041805",
@@ -98,9 +98,9 @@ export const filterTests = (withBuon) => {
 
   test(
     `Filter: {key}_not_in (implicit case-insensitivity)`,
-    withBuon(({ buon }) =>
+    withOcop(({ ocop }) =>
       match(
-        buon,
+        ocop,
         {
           otherId_not_in: [
             "01D20B3C-C0FE-4198-BEB6-1A013C041805",

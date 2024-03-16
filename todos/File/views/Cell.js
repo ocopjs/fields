@@ -4,7 +4,7 @@ import { jsx } from "@emotion/core";
 
 const Image = ({ alt, src }) => (
   <div
-    css={{
+    style={{
       alignItems: "center",
       display: "flex",
       height: 24,
@@ -12,7 +12,7 @@ const Image = ({ alt, src }) => (
       width: 24,
     }}
   >
-    <img alt={alt} css={{ maxHeight: "100%", maxWidth: "100%" }} src={src} />
+    <img alt={alt} style={{ maxHeight: "100%", maxWidth: "100%" }} src={src} />
   </div>
 );
 

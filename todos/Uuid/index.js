@@ -19,7 +19,7 @@ const Uuid = {
         throw (
           `The Uuid field type doesn't provide a default primary key field configuration for mongoose. ` +
           `You'll need to supply your own 'id' field for each list or use a different field type for your ` +
-          `ids (eg '@buon/fields-mongoid').`
+          `ids (eg '@ocop/fields-mongoid').`
         );
       },
     },

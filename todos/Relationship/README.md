@@ -14,9 +14,9 @@ See the [Configuring Relationships](/docs/guides/relationships.md) guide for mor
 ## Usage
 
 ```javascript
-const { Relationship, Text } = require("@buon/fields");
+const { Relationship, Text } = require("@ocop/fields");
 
-buon.createList("User", {
+ocop.createList("User", {
   fields: {
     name: { type: Text },
     posts: { type: Relationship, ref: "Post", many: true },
@@ -24,13 +24,13 @@ buon.createList("User", {
   },
 });
 
-buon.createList("Post", {
+ocop.createList("Post", {
   fields: {
     title: { type: Text },
   },
 });
 
-buon.createList("Org", {
+ocop.createList("Org", {
   fields: {
     name: { type: Text },
   },

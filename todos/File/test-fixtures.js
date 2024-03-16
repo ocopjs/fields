@@ -30,7 +30,7 @@ const prepareFile = (_filePath) => {
 };
 
 export const exampleValue = () => prepareFile("graphql.jpeg");
-export const exampleValue2 = () => prepareFile("buon.jpeg");
+export const exampleValue2 = () => prepareFile("ocop.jpeg");
 export const createReturnedValue = exampleValue().file.filename;
 export const updateReturnedValue = exampleValue2().file.filename;
 
@@ -45,7 +45,7 @@ export const getTestFields = () => ({
 
 export const initItems = () => [
   { image: prepareFile("graphql.jpeg"), name: "file0" },
-  { image: prepareFile("buon.jpeg"), name: "file1" },
+  { image: prepareFile("ocop.jpeg"), name: "file1" },
   { image: prepareFile("react.jpeg"), name: "file2" },
   { image: prepareFile("thinkmill.jpeg"), name: "file3" },
   { image: prepareFile("thinkmill1.jpeg"), name: "file4" },
@@ -55,7 +55,7 @@ export const initItems = () => [
 
 export const storedValues = () => [
   { image: { originalFilename: "graphql.jpeg" }, name: "file0" },
-  { image: { originalFilename: "buon.jpeg" }, name: "file1" },
+  { image: { originalFilename: "ocop.jpeg" }, name: "file1" },
   { image: { originalFilename: "react.jpeg" }, name: "file2" },
   { image: { originalFilename: "thinkmill.jpeg" }, name: "file3" },
   { image: { originalFilename: "thinkmill1.jpeg" }, name: "file4" },

@@ -45,7 +45,7 @@ const SelectField = ({
       <FieldLabel htmlFor={htmlID} field={field} errors={errors} />
       <FieldDescription text={field.adminDoc} />
       <FieldInput>
-        <div css={{ flex: 1 }}>
+        <div style={{ flex: 1 }}>
           <Select
             autoFocus={autoFocus}
             value={canRead ? value : undefined}

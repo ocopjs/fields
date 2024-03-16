@@ -18,7 +18,7 @@ const FloatField = ({
 }) => {
   const handleChange = (event) => {
     const value = event.target.value;
-    // Similar implementation as per old Buon version
+    // Similar implementation as per old Ocop version
     if (/^-?\d*\.?\d*$/.test(value)) {
       onChange(value);
     }

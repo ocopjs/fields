@@ -44,11 +44,11 @@ export const supportedFilters = () => [
   "in_equal",
 ];
 
-export const filterTests = (withBuon) => {
-  const match = async (buon, where, expected, sortBy = "name_ASC") =>
+export const filterTests = (withOcop) => {
+  const match = async (ocop, where, expected, sortBy = "name_ASC") =>
     expect(
       await getItems({
-        buon,
+        ocop,
         listKey: "Test",
         where,
         returnFields: "name lastOnline",
@@ -58,9 +58,9 @@ export const filterTests = (withBuon) => {
 
   test(
     "Sorting: sortBy: lastOnline_ASC",
-    withBuon(({ buon, adapterName }) =>
+    withOcop(({ ocop, adapterName }) =>
       match(
-        buon,
+        ocop,
         undefined,
         [
           { name: "person6", lastOnline: null },
@@ -78,9 +78,9 @@ export const filterTests = (withBuon) => {
 
   test(
     "Sorting: sortBy: lastOnline_DESC",
-    withBuon(({ buon, adapterName }) =>
+    withOcop(({ ocop, adapterName }) =>
       match(
-        buon,
+        ocop,
         undefined,
         [
           { name: "person5", lastOnline: "2020-06-10T10:20:30.456Z" },

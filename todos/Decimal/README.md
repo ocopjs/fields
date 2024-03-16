@@ -15,9 +15,9 @@ See the [Storage section](#storage) for specifics.
 ## Usage
 
 ```js
-const { DateTime, Decimal, Text } = require("@buon/fields");
+const { DateTime, Decimal, Text } = require("@ocop/fields");
 
-buon.createList("Payment", {
+ocop.createList("Payment", {
   fields: {
     timestamp: { type: DateTime },
     description: { type: Text },
@@ -104,7 +104,7 @@ Some DB platforms (Oracle, SQLite and Postgres) support `Decimal` types without 
 This can be configured by passing both the `precision` and `scale` as `null`, eg:
 
 ```js
-buon.createList("Currency", {
+ocop.createList("Currency", {
   fields: {
     name: { type: Text },
     totalIssued: {
@@ -118,8 +118,8 @@ buon.createList("Currency", {
 Will produce:
 
 ```sql
-CREATE TABLE buon."Currency" (
-    id integer DEFAULT nextval('buon."Currency_id_seq"'::regclass) PRIMARY KEY,
+CREATE TABLE ocop."Currency" (
+    id integer DEFAULT nextval('ocop."Currency_id_seq"'::regclass) PRIMARY KEY,
     name text,
     "totalIssued" numeric
 );

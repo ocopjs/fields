@@ -106,7 +106,7 @@ const PasswordField = ({
               isDisabled={isDisabled}
             >
               <A11yText>{showInputValue ? "Hide Text" : "Show Text"}</A11yText>
-              <div css={{ width: 20 }}>
+              <div style={{ width: 20 }}>
                 {showInputValue ? <LockIcon /> : <EyeIcon />}
               </div>
             </Button>

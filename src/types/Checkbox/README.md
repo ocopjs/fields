@@ -11,9 +11,9 @@ The `Checkbox` field type stores a single Boolean value.
 ## Usage
 
 ```js
-const { Checkbox, Text } = require("@buon/fields");
+const { Checkbox, Text } = require("@ocop/fields");
 
-buon.createList("Products", {
+ocop.createList("Products", {
   fields: {
     name: { type: Text },
     isEnabled: { type: Checkbox, isRequired: true },
@@ -58,10 +58,10 @@ The `Checkbox` field type doesn't support indexes or unique enforcement.
 
 In Mongoose the field is added using the `Boolean` schema type.
 
-The `isRequired` config option is enforces by BuonJS only.
+The `isRequired` config option is enforces by OcopJS only.
 
 ### Knex adapter
 
 The Knex adapter uses the [Knex `boolean` type](https://knexjs.org/#Schema-boolean):
 
-The `isRequired` config option is enforces by BuonJS and, if equal to `true`, the column is set as not nullable.
+The `isRequired` config option is enforces by OcopJS and, if equal to `true`, the column is set as not nullable.

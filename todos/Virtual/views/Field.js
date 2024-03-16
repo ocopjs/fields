@@ -14,7 +14,7 @@ export const FieldLabel = (props) => {
   );
   return (
     <span
-      css={{
+      style={{
         color: colors.N60,
         fontSize: "0.9rem",
         fontWeight: 500,
@@ -29,7 +29,7 @@ export const FieldLabel = (props) => {
       {accessError ? (
         <ShieldIcon
           title={accessError.message}
-          css={{ color: colors.N20, marginRight: "1em" }}
+          style={{ color: colors.N20, marginRight: "1em" }}
         />
       ) : null}
     </span>

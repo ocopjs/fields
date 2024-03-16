@@ -13,7 +13,7 @@ A basic but versatile text field of arbitrary length.
 ```js
 const { JSON } = require("@ocopjs/fields");
 
-buon.createList("Product", {
+ocop.createList("Product", {
   fields: {
     description: { type: JSON },
   },

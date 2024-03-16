@@ -11,9 +11,9 @@ A basic but versatile text field of arbitrary length.
 ## Usage
 
 ```js
-const { Text } = require("@buon/fields");
+const { Text } = require("@ocop/fields");
 
-buon.createList("Product", {
+ocop.createList("Product", {
   fields: {
     description: { type: Text },
   },

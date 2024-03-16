@@ -11,9 +11,9 @@ An imprecise numeric value, stored as a floating point.
 ## Usage
 
 ```js
-const { Float, DateTime } = require("@buon/fields");
+const { Float, DateTime } = require("@ocop/fields");
 
-buon.createList("SensorReading", {
+ocop.createList("SensorReading", {
   fields: {
     loggedAt: { type: DateTime },
     temperature: { type: Float },

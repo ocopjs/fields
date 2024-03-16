@@ -15,9 +15,9 @@ The encoding used for storage differs by DB adapter, see the [Storage section](#
 ## Usage
 
 ```js
-const { Uuid, Text } = require("@buon/fields");
+const { Uuid, Text } = require("@ocop/fields");
 
-buon.createList("Products", {
+ocop.createList("Products", {
   fields: {
     name: { type: Text },
     supplierId: { type: Uuid, caseTo: "upper" },

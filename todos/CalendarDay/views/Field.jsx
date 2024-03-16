@@ -72,7 +72,7 @@ const CalendarDayField = ({
             }
           }}
           disabled={isDisabled}
-          css={{ color: isValid(parseISO(value)) ? undefined : "darkred" }}
+          style={{ color: isValid(parseISO(value)) ? undefined : "darkred" }}
           value={value}
         />
       </FieldInput>

@@ -7,7 +7,7 @@ const PasswordCellView = ({ item: { password_is_set } = {} }) => {
   return password_is_set ? (
     "Is set"
   ) : (
-    <span css={{ color: colors.danger, fontWeight: "bold" }}>Not set</span>
+    <span style={{ color: colors.danger, fontWeight: "bold" }}>Not set</span>
   );
 };
 

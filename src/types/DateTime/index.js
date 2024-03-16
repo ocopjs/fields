@@ -5,10 +5,10 @@ export default {
   type: "DateTime",
   implementation: DateTime,
   views: {
-    Controller: resolveView("types/DateTime/views/Controller"),
-    Field: resolveView("types/DateTime/views/Field"),
-    Filter: resolveView("types/DateTime/views/Filter"),
-    Cell: resolveView("types/DateTime/views/Cell"),
+    Controller: resolveView("dist/types/DateTime/views/Controller"),
+    Field: resolveView("dist/types/DateTime/views/Field"),
+    Filter: resolveView("dist/types/DateTime/views/Filter"),
+    Cell: resolveView("dist/types/DateTime/views/Cell"),
   },
   adapters: {
     mongoose: MongoDateTimeInterface,

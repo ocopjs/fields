@@ -72,11 +72,13 @@ ocop.createList("Post", {
 
 Fields share some standard configuration options.
 
-| Option | Type | Default | Description | | -------------- | ----------- |
----------- | --------------------------------------------------------------- |
------------------------------------------------------------------------------------------------------------------------------------------------------
-|
---------------------------------------------------------------------------------
+| Option | Type | Default | Description |     | -------------- | ----------- |
+| ------ | ---- | ------- | ----------- | --- | -------------- | ----------- |
+
+---
+
+## |
+
 | | `type` | `FieldType` | (required) | | | `adminDoc` | `String` | `false` | A
 description for the field used in the AdminUI. | | `schemaDoc` | `String` |
 `false` | A description for the field used in the GraphQL schema. | |

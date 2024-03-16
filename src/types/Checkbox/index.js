@@ -5,10 +5,10 @@ export default {
   type: "Checkbox",
   implementation: Checkbox,
   views: {
-    Controller: resolveView("types/Checkbox/views/Controller"),
-    Field: resolveView("types/Checkbox/views/Field"),
-    Filter: resolveView("types/Checkbox/views/Filter"),
-    Cell: resolveView("types/Checkbox/views/Cell"),
+    Controller: resolveView("dist/types/Checkbox/views/Controller"),
+    Field: resolveView("dist/types/Checkbox/views/Field"),
+    Filter: resolveView("dist/types/Checkbox/views/Filter"),
+    Cell: resolveView("dist/types/Checkbox/views/Cell"),
   },
   adapters: {
     mongoose: MongoCheckboxInterface,

@@ -1,27 +1,32 @@
 /** @jsx jsx */
 
 import { jsx } from "@emotion/core";
-import { Fragment } from "react";
+import { Fragment, lazy } from "react";
 import { gql, useQuery } from "@apollo/client";
 
 import {
   FieldContainer,
-  FieldLabel,
   FieldDescription,
   FieldInput,
+  FieldLabel,
 } from "@arch-ui/fields";
-import { PlusIcon, PersonIcon, LinkExternalIcon } from "@primer/octicons-react";
+import { LinkExternalIcon, PersonIcon, PlusIcon } from "@primer/octicons-react";
 import { gridSize } from "@arch-ui/theme";
 import { IconButton } from "@arch-ui/button";
 import Tooltip from "@arch-ui/tooltip";
 
 import RelationshipSelect from "./RelationshipSelect";
+
 import {
   CreateItemModal,
   ListProvider,
   useList,
   useAdminMeta,
 } from "@ocopjs/app-admin-ui/components";
+
+// const { CreateItemModal, ListProvider, useList, useAdminMeta } = lazy(
+//   () => import("@ocopjs/app-admin-ui/components"),
+// );
 
 const MAX_IDS_IN_FILTER = 100;
 
@@ -84,9 +89,10 @@ function LinkToRelatedItems({ field, value }) {
     // What happens when there are 10,000 ids? The URL would be too
     // big, so we arbitrarily limit it to the first 100
     link = `${link}?!id_in="${value
-      .slice(0, MAX_IDS_IN_FILTER)
-      .map(({ id }) => id)
-      .join(",")}"`;
+        .slice(0, MAX_IDS_IN_FILTER)
+        .map(({ id }) => id)
+        .join(",")
+      }"`;
   } else {
     label = "View Item Details";
 

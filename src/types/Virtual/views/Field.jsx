@@ -6,7 +6,7 @@ import { colors, gridSize } from "@arch-ui/theme";
 import { ShieldIcon } from "@primer/octicons-react";
 
 import { FieldContainer, FieldDescription } from "@arch-ui/fields";
-import PrettyData from "../prettyData";
+import PrettyData from "../lib/prettyData";
 
 export const FieldLabel = (props) => {
   const accessError = (props.errors || []).find(

@@ -14,7 +14,7 @@ function initOptions(options) {
 }
 
 const VALID_DATA_TYPES = ["enum", "string", "integer"];
-const DOCS_URL = "https://ocop.vn/ocop/fields/src/types/select/";
+const DOCS_URL = "https://ocopee.com";
 
 function validateOptions({ options, dataType, listKey, path }) {
   if (!VALID_DATA_TYPES.includes(dataType)) {

@@ -1,5 +1,5 @@
 import React from "react";
-import PrettyData from "../prettyData";
+import PrettyData from "../lib/prettyData";
 
 export default ({ data }) => {
   return <PrettyData data={data} />;

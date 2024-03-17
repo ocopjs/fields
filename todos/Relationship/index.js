@@ -1,4 +1,4 @@
-import { Relationship, MongoRelationshipInterface } from "./Implementation";
+import { MongoRelationshipInterface, Relationship } from "./Implementation";
 import { resolveView } from "../../resolve-view";
 
 export default {
@@ -6,10 +6,10 @@ export default {
   isRelationship: true, // Used internally for this special case
   implementation: Relationship,
   views: {
-    Controller: resolveView("types/Relationship/views/Controller"),
-    Field: resolveView("types/Relationship/views/Field"),
-    Filter: resolveView("types/Relationship/views/Filter"),
-    Cell: resolveView("types/Relationship/views/Cell"),
+    Controller: resolveView("dist/types/Relationship/views/Controller"),
+    Field: resolveView("dist/types/Relationship/views/Field"),
+    Filter: resolveView("dist/types/Relationship/views/Filter"),
+    Cell: resolveView("dist/types/Relationship/views/Cell"),
   },
   adapters: {
     mongoose: MongoRelationshipInterface,

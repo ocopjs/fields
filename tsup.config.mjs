@@ -2,7 +2,7 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
   entryPoints: ["src", "!**/*.md"],
-  format: ["cjs"],
+  format: ["cjs", "esm"],
   dts: false,
   treeshake: false,
   splitting: false,

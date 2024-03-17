@@ -16,6 +16,7 @@
     "url": "https://github.com/ocopjs/fields/issues"
   },
   "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "engines": {
     "node": "16"
   },
@@ -46,7 +47,7 @@
     "@codemirror/lang-markdown": "^6.0.1",
     "@emotion/core": "^10.1.1",
     "@ocopjs/access-control": "^1.0.3",
-    "@ocopjs/adapter-mongoose": "^1.0.0",
+    "@ocopjs/adapter-mongoose": "^1.0.1",
     "@ocopjs/server-side-graphql-client": "^1.0.0",
     "@ocopjs/utils": "^1.0.5",
     "@primer/octicons-react": "^11.3.0",

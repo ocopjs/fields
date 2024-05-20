@@ -4,7 +4,7 @@ import { Implementation } from "../../Implementation";
 import { MongooseFieldAdapter } from "@ocopjs/adapter-mongoose";
 
 export class Decimal extends Implementation {
-  constructor(path, { symbol }) {
+  constructor(_path, { symbol }) {
     super(...arguments);
     this.symbol = symbol;
     this.isOrderable = true;

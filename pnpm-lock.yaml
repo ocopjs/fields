@@ -72,8 +72,8 @@ dependencies:
     specifier: ^1.0.3
     version: 1.0.3
   '@ocopjs/adapter-mongoose':
-    specifier: ^1.0.1
-    version: 1.0.1
+    specifier: ^1.0.3
+    version: 1.0.3
   '@ocopjs/file-adapters':
     specifier: ^1.0.0
     version: 1.0.0
@@ -1665,8 +1665,8 @@ packages:
       '@ocopjs/utils': 1.0.5
     dev: false
 
-  /@ocopjs/adapter-mongoose@1.0.1:
-    resolution: {integrity: sha512-RVHtIM/aD4Zc1KLr4XgsCKz+C0DUPiWDR16q8/gzz98SKEbPeuwZrGgQBq7gExOtkIJG1vTqVumVmxpkQ5q1Hw==}
+  /@ocopjs/adapter-mongoose@1.0.3:
+    resolution: {integrity: sha512-qEDBSdPcvjpWbN8bZiF+0txp0YIC78zVA6MU1liiDIpOvyEvbw2L0/m+54Qs9lekP/Vj/moyI/I7sfc7AT0UyQ==}
     engines: {node: '16'}
     dependencies:
       '@ocopjs/common': 1.0.3

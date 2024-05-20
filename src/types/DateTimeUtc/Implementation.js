@@ -3,7 +3,7 @@ import { Implementation } from "../../Implementation";
 import { MongooseFieldAdapter } from "@ocopjs/adapter-mongoose";
 
 export class DateTimeUtcImplementation extends Implementation {
-  constructor(path, { format = "yyyy-MM-dd[T]HH:mm:ss.SSSxx" }) {
+  constructor(_path, { format = "yyyy-MM-dd[T]HH:mm:ss.SSSxx" }) {
     super(...arguments);
     this.isOrderable = true;
     this.format = format;

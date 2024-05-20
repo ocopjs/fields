@@ -15,8 +15,8 @@ export { default as Password } from "./types/Password";
 export { default as Select } from "./types/Select";
 export { default as Text } from "./types/Text";
 export { default as Virtual } from "./types/Virtual";
+export { default as CalendarDay } from "./types/CalendarDay";
 
-// export { default as CalendarDay } from "./types/CalendarDay";
 // export { default as DateTimeUtc } from "./types/DateTimeUtc";
 // export { default as Decimal } from "./types/Decimal";
 // export { default as Float } from "./types/Float";

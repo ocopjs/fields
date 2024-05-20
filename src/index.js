@@ -19,12 +19,11 @@ export { default as CalendarDay } from "./types/CalendarDay";
 export { default as DateTimeUtc } from "./types/DateTimeUtc";
 export { default as Decimal } from "./types/Decimal";
 export { default as Float } from "./types/Float";
+export { default as Slug } from "./types/Slug";
+export { default as Url } from "./types/Url";
+export { default as Uuid } from "./types/Uuid";
 
-// export { default as Slug } from "./types/Slug";
-// export { default as Url } from "./types/Url";
-// export { default as Uuid } from "./types/Uuid";
 // export { default as JSON } from "./types/JSON";
-
 // export { default as Currency } from "./types/Currency";
 // export { default as Images } from "./types/Images";
 // export { default as Translate } from "./types/Translate";

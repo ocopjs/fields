@@ -38,7 +38,7 @@ export class DateTimeUtcImplementation extends Implementation {
   // getGqlAuxTypes() {
   //   return [`scalar String`];
   // }
- 
+
   extendAdminMeta(meta) {
     return { ...meta, format: this.format };
   }

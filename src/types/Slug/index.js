@@ -5,9 +5,9 @@ const Slug = {
   type: "Slug",
   implementation: SlugImplementation,
   views: {
-    Controller: resolveView("types/Text/views/Controller"),
-    Field: resolveView("types/Text/views/Field"),
-    Filter: resolveView("types/Text/views/Filter"),
+    Controller: resolveView("dist/types/Text/views/Controller"),
+    Field: resolveView("dist/types/Text/views/Field"),
+    Filter: resolveView("dist/types/Text/views/Filter"),
   },
   adapters: {
     mongoose: MongoSlugInterface,

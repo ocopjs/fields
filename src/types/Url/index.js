@@ -5,10 +5,10 @@ export default {
   type: "Url",
   implementation: Text,
   views: {
-    Controller: resolveView("types/Text/views/Controller"),
-    Field: resolveView("types/Url/views/Field"),
-    Filter: resolveView("types/Text/views/Filter"),
-    Cell: resolveView("types/Url/views/Cell"),
+    Controller: resolveView("dist/types/Text/views/Controller"),
+    Field: resolveView("dist/types/Url/views/Field"),
+    Filter: resolveView("dist/types/Text/views/Filter"),
+    Cell: resolveView("dist/types/Url/views/Cell"),
   },
   adapters: {
     mongoose: MongoTextInterface,

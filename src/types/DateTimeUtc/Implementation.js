@@ -35,10 +35,10 @@ export class DateTimeUtcImplementation extends Implementation {
   gqlCreateInputFields() {
     return [`${this.path}: String`];
   }
-  getGqlAuxTypes() {
-    return [`scalar String`];
-  }
-
+  // getGqlAuxTypes() {
+  //   return [`scalar String`];
+  // }
+ 
   extendAdminMeta(meta) {
     return { ...meta, format: this.format };
   }

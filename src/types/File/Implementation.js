@@ -12,10 +12,11 @@ export class File extends Implementation {
     super(...arguments);
     this.graphQLOutputType = "File";
     this.fileAdapter = adapter;
-    this.host = adminConfig.host;
+    this.host = adminConfig?.host;
     if (!this.fileAdapter) {
       throw new Error(`No file adapter provided for File field.`);
     }
+
     if (!this.host) {
       throw new Error(`No file host name provided for File field.`);
     }

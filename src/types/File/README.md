@@ -6,13 +6,14 @@ title: File
 
 # File
 
-Support files hosted in a range of different contexts, e.g. in the local filesystem, or on a cloud based file server.
+Support files hosted in a range of different contexts, e.g. in the local
+filesystem, or on a cloud based file server.
 
 ## Usage
 
 ```js
-const { File } = require("@ocop/fields");
-const { LocalFileAdapter } = require("@ocop/file-adapters");
+const { File } = require("@ocopjs/fields");
+const { LocalFileAdapter } = require("@ocopjs/file-adapters");
 
 const fileAdapter = new LocalFileAdapter({
   /*...config */

@@ -275,33 +275,39 @@ export default class FileField extends Component {
         <FieldLabel htmlFor={htmlID} field={field} errors={errors} />
         <FieldDescription text={field.adminDoc} />
         <FieldInput>
-          {file ? (
-            <Wrapper>
-              {imagePath && <ImageContainer src={imagePath} alt={field.path} />}
-              <Content>
-                <FlexGroup style={{ marginBottom: gridSize }}>
-                  {this.renderUploadButton()}
-                  {this.renderCancelButton()}
-                </FlexGroup>
-                {errorMessage ? (
-                  <ErrorInfo>{errorMessage}</ErrorInfo>
-                ) : (
-                  <FlexGroup isInline growIndexes={[0]}>
-                    <MetaInfo href={file.publicUrl}>
-                      {file.filename || file.name}
-                    </MetaInfo>
-                    {showStatusMessage ? (
-                      <ChangeInfo status={changeStatus}>
-                        {statusMessage({ status: changeStatus })}
-                      </ChangeInfo>
-                    ) : null}
-                  </FlexGroup>
+          {file
+            ? (
+              <Wrapper>
+                {imagePath && (
+                  <ImageContainer src={imagePath} alt={field.path} />
                 )}
-              </Content>
-            </Wrapper>
-          ) : (
-            this.renderUploadButton()
-          )}
+                <Content>
+                  <FlexGroup style={{ marginBottom: gridSize }}>
+                    {this.renderUploadButton()}
+                    {this.renderCancelButton()}
+                  </FlexGroup>
+                  {errorMessage
+                    ? <ErrorInfo>{errorMessage}</ErrorInfo>
+                    : (
+                      <FlexGroup isInline growIndexes={[0]}>
+                        <MetaInfo href={file.publicUrl}>
+                          {file.filename || file.name}
+                        </MetaInfo>
+                        {showStatusMessage
+                          ? (
+                            <ChangeInfo status={changeStatus}>
+                              {statusMessage({ status: changeStatus })}
+                            </ChangeInfo>
+                          )
+                          : null}
+                      </FlexGroup>
+                    )}
+                </Content>
+              </Wrapper>
+            )
+            : (
+              this.renderUploadButton()
+            )}
 
           <HiddenInput
             autoComplete="off"

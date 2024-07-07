@@ -21,6 +21,7 @@
   },
   "scripts": {
     "build": "tsup",
+    "dev": "tsup --watch",
     "format": "prettier --write \"**/*.{ts,tsx,md,js}\""
   },
   "dependencies": {
@@ -45,11 +46,11 @@
     "@babel/runtime": "^7.14.6",
     "@codemirror/lang-markdown": "^6.0.1",
     "@emotion/core": "^10.1.1",
-    "@ocopjs/access-control": "^1.0.3",
-    "@ocopjs/adapter-mongoose": "^1.0.3",
-    "@ocopjs/file-adapters": "^1.0.0",
-    "@ocopjs/server-side-graphql-client": "^1.0.0",
-    "@ocopjs/utils": "^1.0.5",
+    "@ocopjs/access-control": "^1.0.6",
+    "@ocopjs/adapter-mongoose": "^1.0.9",
+    "@ocopjs/file-adapters": "^1.0.1",
+    "@ocopjs/server-side-graphql-client": "^1.0.1",
+    "@ocopjs/utils": "^1.0.6",
     "@primer/octicons-react": "^11.3.0",
     "apollo-errors": "^1.9.0",
     "bcryptjs": "^2.4.3",

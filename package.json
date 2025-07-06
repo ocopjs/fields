@@ -1,7 +1,7 @@
 {
   "name": "@ocopjs/fields",
   "description": "OcopJS Kiểu dữ liệu như: Chữ, số, mật khẩu và các kiểu khác. 🇻🇳",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "author": "ocopjs",
   "license": "Apache-2.0",
   "homepage": "https://docs.ocopee.com/docs/ocopjs/references/fields",

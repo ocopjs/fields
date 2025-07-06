@@ -19,8 +19,7 @@ export default class IntegerController extends FieldController {
     return `${this.getFilterLabel({ label, type })}: "${value.replace(
       /\s/g,
       "",
-    )
-      }"`;
+    )}"`;
   };
   serialize = (data) => {
     const value = data[this.path];

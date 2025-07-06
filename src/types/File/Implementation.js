@@ -1,8 +1,9 @@
-import cuid from "cuid";
+import { createId } from "@paralleldrive/cuid2";
 import { Implementation } from "../../Implementation";
 import { MongooseFieldAdapter } from "@ocopjs/adapter-mongoose";
 import mongoose from "mongoose";
 
+const cuid = createId;
 // Disabling the getter of mongoose >= 5.1.0
 // https://mongoosejs.com/docs/migrating_to_5.html#id-getter
 mongoose.set("objectIdGetter", false);

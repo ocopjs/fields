@@ -1,11 +1,12 @@
 import { getItems } from "@ocopjs/server-side-graphql-client";
 import slugify from "slugify";
-import cuid from "cuid";
+import { createId } from "@paralleldrive/cuid2";
 import {
   MongoTextInterface as MongoSlugInterface,
   Text,
 } from "../Text/Implementation";
 
+const cuid = createId;
 const MAX_UNIQUE_ATTEMPTS = 100;
 
 const findFirstNonEmptyStringValue = (fields) =>
